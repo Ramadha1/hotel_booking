@@ -1,0 +1,101 @@
+/* Background Image dengan Overlay Gelap */
+body {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff; /* Font default putih */
+  min-height: 100vh;
+}
+
+/* Overlay gelap di atas gambar background */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.harga-container {
+    background: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Warna latar belakang putih transparan */
+    color: #000; /* Warna teks hitam */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px; /* Batas lebar maksimal*/
+    margin: 0 auto; /* Posisi tengah horizontal */
+  }
+
+  .about-container {
+    background: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Warna latar belakang putih transparan */
+    color: #000; /* Warna teks hitam */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px; /* Batas lebar maksimal form */
+    margin: 0 auto; /* Posisi tengah horizontal */
+  }
+
+  
+/* Kontainer form berada di tengah dan lebar secukupnya */
+.form-container {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Warna latar belakang putih transparan */
+  color: #000; /* Warna teks hitam */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px; /* Batas lebar maksimal form */
+  margin: 0 auto; /* Posisi tengah horizontal */
+}
+
+.hasil-container {
+    background: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Warna latar belakang putih transparan */
+    color: #000; /* Warna teks hitam */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1250px; /* Batas lebar maksimal*/
+    margin: 0 auto; /* Posisi tengah horizontal */
+
+/* Mengatur font untuk navbar menjadi Inter */
+.navbar {
+  font-family: "Inter", sans-serif;
+}
+
+/* Jika ingin memastikan bahwa seluruh elemen navbar menggunakan font Inter */
+.navbar-nav .nav-link {
+  font-family: "Inter", sans-serif;
+}
+
+/* Tombol Kembali */
+.btn-primary {
+  background-color: #007bff; /* Warna tombol kembali */
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Warna tombol saat hover */
+}
